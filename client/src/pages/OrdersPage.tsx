@@ -646,7 +646,7 @@ export default function OrdersPage() {
                       {order.attachments.map((att, idx) => (
                         <a
                           key={idx}
-                          href={`http://localhost:5000${att.path}`}
+                          href={att.path}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="flex items-center gap-2 px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm hover:bg-gray-50"
